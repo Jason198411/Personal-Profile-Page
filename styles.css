@@ -158,17 +158,11 @@ footer li{
 	}
 	.subnav{
 		float:right;
+		margin-right: 100px;
 
 	}
-	.subnav div{
-		display: inline-block;
-	}
-	.other-1{		
-		margin-right: 60px;
-	}
-	.other-2{		
-		margin-right: 50px;
-	}
+
+
 	.imp{
 		margin:50px auto;
 		display: flex;
