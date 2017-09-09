@@ -1,0 +1,180 @@
+*{
+	box-sizing: border-box;
+}
+body, ul, main{
+	padding: 0;
+	margin: 0;
+
+}
+body{
+	background-color: #f7f5f0;
+	padding-top: 180px;
+	
+}
+li{
+	list-style: none;	
+}
+/*css for navigation*/
+.nav{
+	width: 100%;	
+	background-color: #000;
+	color: #fff;
+	position: fixed;	
+	line-height: 50px;	
+	font-size: 2em;
+	font-weight: 700;	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	top: 0;
+	z-index: 2;
+}
+.nav a{
+	text-decoration: none;
+	color: #D0D0D0;
+}
+.nav a:hover{
+	color: #fff;
+}
+
+/*css for header*/
+.head{
+	text-align: center;
+	height: 500px;
+	width: 100%;
+	background: url('image/background.jpg') no-repeat top center;
+		
+}
+.head img{	
+	margin-top: 100px;
+	height: 150px;
+	width: 150px;	
+	border-radius: 50%;
+	border: 2px solid #fff;
+	transition: all .5s;
+}
+header img:hover{
+	transform: scale(1.2) rotate(5deg);
+}
+header h1{
+	background-color: #fff;
+	color: #000;
+	display: table;
+	margin:15px auto;
+	padding: 10px;
+	border-radius: 5px;
+	text-shadow: 3px 2px #B0B0B0;
+
+}
+header p{
+	background-color: #C0C0C0;
+	color: 	#FF4500;
+	display: table;
+	margin:5px auto;
+	font-size: 1.2em;
+	border-radius: 5px;
+	padding: 5px;
+}
+/*css for main*/
+.imp{
+	line-height: 1.5em;	
+	width: 90%;	
+	margin: 10px auto;
+}
+.bg, .skill{
+	margin-bottom: 10px;		
+	padding:25px;
+	background-color: #fff;
+	border-radius: 8px;
+	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;	
+}
+.skill ul{
+	text-align: center;
+}
+.skill ul li{
+	display: inline-block;
+	margin:3px 3px;
+	background-color: #0033FF;
+	padding: 0 10px;
+	border-radius: 5px;
+	color:#fff;
+}
+main:after{
+	content: "."; 
+	display:block; 
+	height:0px; 
+	clear: both; 
+	visibility: hidden; 
+}
+
+/*css for footer*/
+footer{
+	padding-bottom: 100px;
+}
+footer li{
+	display: inline-block;
+}
+.soc, .cop{
+	width: 200px;
+	margin: 0 auto;	
+}
+.soc a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+  margin: 10px 10px;
+  transition: all .5s;
+}
+.soc a:hover{
+	opacity: 1;
+}
+.twitter{
+	background-image: url(image/twitter.svg);
+}
+.linkedin{
+	background-image: url(image/linkedin.svg);
+}
+.github{
+	background-image: url(image/github.svg);
+}
+.cop{
+	opacity: 0.5;
+	font-size: 0.85em;
+	padding: 10px 0;
+}
+@media screen and (min-width: 500px){
+	body{
+		padding-top: 80px;
+	}
+	.nav{
+		font-size: 1.25em;
+	}
+	.name{
+		/*display:block;*/
+		float: left;
+		margin-left: 50px;
+	}
+	.subnav{
+		float:right;
+
+	}
+	.subnav div{
+		display: inline-block;
+	}
+	.other-1{		
+		margin-right: 60px;
+	}
+	.other-2{		
+		margin-right: 50px;
+	}
+	.imp{
+		margin:50px auto;
+		display: flex;
+	}
+	.bg,.skill{
+		width: 45%;
+		margin: 0 auto;		
+	}
+}
